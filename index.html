@@ -16,12 +16,12 @@
       <nav
         class="container mx-auto flex py-5 justify-between items-center border-b"
       >
-        <div class="logo w-[150px]">
+        <div id="home" class="logo w-[150px] cursor-pointer">
           <img src="assets/Logo.png" alt="logo" />
         </div>
         <div class="search">
           <label class="input input-bordered flex items-center gap-2">
-            <input type="text" class="grow" placeholder="Search" />
+            <input id="input" type="text" class="grow" placeholder="Search" />
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 16 16"
@@ -47,6 +47,12 @@
         id="videos"
         class="container mx-auto py-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5"
       ></section>
+      <button class="btn hidden" onclick="my_modal_5.showModal()">
+        open modal
+      </button>
+      <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+        <div id="modal2" class="modal-box"></div>
+      </dialog>
     </main>
     <script src="script/script.js"></script>
   </body>
